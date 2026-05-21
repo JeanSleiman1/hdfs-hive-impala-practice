@@ -1,0 +1,9 @@
+﻿order_id,customer_name,city,product,category,quantity,price,payment_status
+1,Jean,Beirut,Laptop,Electronics,1,850,Paid
+2,Sara,Tripoli,Headphones,Electronics,2,45,Paid
+3,Omar,Saida,Office Chair,Furniture,1,120,Pending
+4,Lina,Beirut,Notebook,Stationery,5,3,Paid
+5,Karim,Jounieh,Mouse,Electronics,1,25,Cancelled
+6,Nour,Zahle,Desk,Furniture,1,200,Paid
+7,Maya,Beirut,Pen,Stationery,10,1,Paid
+8,Hadi,Byblos,Keyboard,Electronics,1,60,Pending
