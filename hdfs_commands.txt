@@ -1,23 +1,22 @@
-﻿# Create HDFS folders
+﻿-- Create HDFS folders
 hdfs dfs -mkdir -p /project/ecommerce/input
 hdfs dfs -mkdir -p /project/ecommerce/backup
 hdfs dfs -mkdir -p /project/ecommerce/output
 
-# Upload file to HDFS
+-- Upload file to HDFS
 hdfs dfs -put /tmp/orders.csv /project/ecommerce/input/
 
-# Check file in HDFS
+-- Check file in HDFS
 hdfs dfs -ls /project/ecommerce/input
 hdfs dfs -cat /project/ecommerce/input/orders.csv
-
-# Make backup
+-- Make backup
 hdfs dfs -cp /project/ecommerce/input/orders.csv /project/ecommerce/backup/
 
-# Rename backup file
+-- Rename backup file
 hdfs dfs -mv /project/ecommerce/backup/orders.csv /project/ecommerce/backup/orders_backup.csv
 
-# Check folders
+-- Check folders
 hdfs dfs -ls -R /project/ecommerce
 
-# Check size
+-- Check size
 hdfs dfs -du -h /project/ecommerce
