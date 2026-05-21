@@ -4,7 +4,7 @@ CREATE DATABASE IF NOT EXISTS ecommerce_db;
 -- Use database
 USE ecommerce_db;
 
--- Create table
+-- Create a table
 CREATE TABLE IF NOT EXISTS orders (
   order_id INT,
   customer_name STRING,
@@ -27,13 +27,13 @@ INSERT INTO orders VALUES
 (7, 'Maya', 'Beirut', 'Pen', 'Stationery', 10, 1.0, 'Paid'),
 (8, 'Hadi', 'Byblos', 'Keyboard', 'Electronics', 1, 60.0, 'Pending');
 
--- Check table
+-- Check the table
 SHOW TABLES;
 
--- Show all data
+-- Show all the data
 SELECT * FROM orders;
 
--- Orders by status
+-- Orders by status (if its paid, pending or canceled)
 SELECT payment_status, COUNT(*) AS total_orders
 FROM orders
 GROUP BY payment_status;
